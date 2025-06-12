@@ -26,7 +26,21 @@ public class Game {
             System.out.println(result.getStrikes() + " 스트라이크, " + result.getBalls() + " 볼, " + result.getNothings() + " 낫싱");
         } while (result.getStrikes() != 3);
 
-        System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
+        System.out.println("3개의 숫자를 모두 맞히셨습니다!");
+        chosenToRestart();
+
+        System.out.println("게임을 종료합니다.");
+
+    }
+
+    private void chosenToRestart() {
+        System.out.print("게임을 새로 시작하려면 1, 종료하려면 2를 눌러주세요: ");
+        int choice = scanner.nextInt();
+
+        if (choice == 1) {
+            init();
+            play(); // 재귀 호출로 게임을 새로 시작
+        }
 
     }
 
