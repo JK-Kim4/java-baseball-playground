@@ -8,8 +8,8 @@ public class BallNumber {
 
     public BallNumber(int number) {
 
-        if (number < 1 || number > 3) {
-            throw new IllegalArgumentException("순서는 1이상 3이하의 자연수만 입력 가능");
+        if (number < 1 || number > 9) {
+            throw new IllegalArgumentException("순서는 1이상 9이하의 자연수만 입력 가능");
         }
 
         this.number = number;

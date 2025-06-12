@@ -8,7 +8,7 @@ public class BallPosition {
 
     public BallPosition(int position) {
 
-        if (position < 1 || position > 9) {
+        if (position < 1 || position > 3) {
             throw new IllegalArgumentException("순서는 1이상 3이하의 자연수만 입력 가능");
         }
 

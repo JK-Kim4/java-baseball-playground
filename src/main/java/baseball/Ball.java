@@ -16,7 +16,6 @@ public class Ball {
         if(this.equals(user)){
             return BallStatus.STRIKE;
         }
-
         if(this.isSameNumber(user)){
             return BallStatus.BALL;
         }
